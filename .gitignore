@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+
+# Environments
+.venv/
+env/
+.env
+
+# NOTE:
+# nutricore.db is intentionally committed for demo purposes.
+# It contains pre-seeded users and ratings so the app works out-of-the-box.
+# The database can also be recreated using setup_db.py.
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Notebooks
+.ipynb_checkpoints/
+notebooks/Testing.ipynb
+
