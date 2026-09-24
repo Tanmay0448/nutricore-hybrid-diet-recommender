@@ -1,5 +1,6 @@
 [theme]
 base = "light"
+baseFontSize = 13
 
 [server]
 headless = true

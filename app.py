@@ -25,7 +25,7 @@ st.set_page_config(page_title="NutriCore", page_icon="🥗", layout="wide")
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
-.block-container {width: 100%; max-width: 1120px; box-sizing: border-box; margin-left: auto; margin-right: auto; padding-top: 2.25rem; padding-bottom: 2.25rem;}
+.block-container, [data-testid="stMainBlockContainer"] {width: 100%; max-width: 960px; box-sizing: border-box; margin-left: auto; margin-right: auto; padding-top: 2.25rem; padding-bottom: 2.25rem;}
 html, body, [class*="css"] {font-family: "DM Sans", "Segoe UI", sans-serif;}
 .hero {text-align: center; padding: 1.5rem 0 2rem;}
 .hero h1 {font-family: "Playfair Display", Georgia, serif; font-size: clamp(2.7rem, 6vw, 4.2rem); letter-spacing: -.045em; margin-bottom: .15rem;}
@@ -51,7 +51,7 @@ html, body, [class*="css"] {font-family: "DM Sans", "Segoe UI", sans-serif;}
 .signup-prompt {margin: .7rem 0 .35rem; color: #64748b; font-size: .86rem;}
 [data-testid="stButton"] > button {min-height: 2.5rem;}
 [data-testid="stHeaderActionElements"] {display: none !important;}
-@media (max-width: 1160px) {.block-container {max-width: 100%; padding-left: 1.25rem; padding-right: 1.25rem;}}
+@media (max-width: 1160px) {.block-container, [data-testid="stMainBlockContainer"] {max-width: 100%; padding-left: 1.25rem; padding-right: 1.25rem;}}
 @keyframes salad-bounce {50% {transform: translateX(-50%) translateY(-5px) rotate(2deg);}}
 @keyframes ingredient-float {50% {transform: translateY(-9px) rotate(8deg);}}
 @keyframes meal-progress {0% {transform: translateX(-115%);} 55%, 100% {transform: translateX(280%);}}
